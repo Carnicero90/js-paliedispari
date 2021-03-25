@@ -13,7 +13,7 @@ while (!(userNumber >= minNumber && userNumber <= maxNumber)) {
 }
 
 var compiNumber = randomInt(minNumber, maxNumber);
-alert(compiNumber);
+alert("Mister Computer ha scelto: " + compiNumber);
 var resIsOdd = isOdd(userNumber + compiNumber);
 var userWon = userChoice === "dispari" ? resIsOdd : !resIsOdd;
 var resultMessage = userWon ? "hai vinto!" : "hai perso!";

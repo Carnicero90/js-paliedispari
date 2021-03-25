@@ -47,4 +47,9 @@ label {
     font-weight: 600;
 }
 
+.false {
+    filter: invert(1);
+
+}
+
 /* ======================= */

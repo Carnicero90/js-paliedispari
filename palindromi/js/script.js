@@ -9,7 +9,12 @@ function isPalindrome(word) {
 function showIfPal() {
     var word = document.getElementById("user-input").value;
     var wordIsPal = isPalindrome(word);
-    var greetOrGrieve = wordIsPal ? ["", "complimenti!"] : ["non", "peccato!"];
-    message = `<span class="marked">"${word}"</span> ${greetOrGrieve[0]} è un palindromo, ${greetOrGrieve[1]}`;
+    // IF !wordIsPal (default)
+    var greetOrGrieve = ["marked false", "non", "peccato!"];
+    // IF wordIsPal
+    if (wordIsPal) {
+        greetOrGrieve = ["marked true", "", "complimenti!"];
+    }
+    var message = `<span class="${greetOrGrieve[0]}">"${word}"</span> ${greetOrGrieve[1]} è un palindromo, ${greetOrGrieve[2]}`;
     document.getElementById("output").innerHTML = message;
 }

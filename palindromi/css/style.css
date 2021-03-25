@@ -1,0 +1,26 @@
+/* COMMON
+   ======================= */
+
+/* ======================= */
+
+/* MACRO LAYOUT
+   ======================= */
+
+/* ======================= */
+
+/* MICRO LAYOUT
+   ======================= */
+h1,
+h1 span {
+    background-color: #d27474;
+    color: white;
+    text-align: center;
+}
+
+h1 span {
+    display: block;
+    filter: invert(1);
+    transform: scale(-1);
+}
+
+/* ======================= */

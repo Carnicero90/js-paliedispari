@@ -5,6 +5,13 @@
 
 /* MACRO LAYOUT
    ======================= */
+body {
+    text-align: center;
+}
+
+main {
+    padding-top: 40px;
+}
 
 /* ======================= */
 
@@ -21,6 +28,15 @@ h1 span {
     display: block;
     filter: invert(1);
     transform: scale(-1);
+}
+
+label {
+    display: block;
+    padding-bottom: 20px;
+}
+
+#output {
+    padding-top: 20px;
 }
 
 /* ======================= */

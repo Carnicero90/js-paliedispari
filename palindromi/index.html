@@ -13,9 +13,15 @@
 </head>
 
 <body>
-    <h1>Palindromo<span>Palindromo</span></h1>
-
-
+    <header>
+        <h1>Palindromo<span>Palindromo</span></h1>
+    </header>
+    <main>
+        <label for="user-input">Credi di aver scoperto un nuovo palidromo? Controlla qua:</label>
+        <input type="text" id="user-input" name="user-input" placeholder="inserisci testo">
+        <input type="submit" id="showIfPal" onclick="showIfPal()" value="Controlla">
+        <p id="output"> </p>
+    </main>
     <script src="js/script.js"></script>
 
 </body>

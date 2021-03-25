@@ -39,4 +39,12 @@ label {
     padding-top: 20px;
 }
 
+#output .marked {
+    background-color: #d27474;
+    color: white;
+    padding: 10px;
+    font-size: 130%;
+    font-weight: 600;
+}
+
 /* ======================= */

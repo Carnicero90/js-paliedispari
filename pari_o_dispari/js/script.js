@@ -2,10 +2,18 @@ const minNumber = 1;
 const maxNumber = 5;
 
 // PROMPTS
-const validAnswers = ["pari", "dispari"];
 var userChoice;
-while (!(validAnswers.includes(userChoice))) {
-    userChoice = prompt("pari o dispari?");
+while (userChoice === undefined) {
+   switch (prompt("pari o dispari?")) {
+       case "pari":
+           userChoice = false;
+           break;
+        case "dispari":
+            userChoice = true;
+            break;
+        default:
+            alert("inserire risposta valida!");
+   }
 }
 
 var userNumber;
@@ -17,7 +25,7 @@ var compiNumber = randomInt(minNumber, maxNumber);
 alert("Mister Computer ha scelto: " + compiNumber);
 
 var resIsOdd = isOdd(userNumber + compiNumber);
-var userWon = userChoice === "dispari" ? resIsOdd : !resIsOdd;
+var userWon = userChoice === resIsOdd;
 var resultMessage = userWon ? "hai vinto!" : "hai perso!";
 alert(resultMessage);
 location.reload();

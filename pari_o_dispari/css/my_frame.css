@@ -36,6 +36,9 @@ img {
 /* CLASSES */
 
 /* Classes>flow */
+.block {
+    display: block;
+}
 
 .floater {
     float: left;

@@ -1,55 +1,51 @@
 /* COMMON
    ======================= */
+   /* graphics */
+.main-colors {
+    background-color: #d27474;
+    color: white;
+}
+.palindrome {
+    filter: invert(1);
+}
+
+   /* spacing */
+.pb-20 {
+    padding-bottom: 20px;
+}
 
 /* ======================= */
 
 /* MACRO LAYOUT
    ======================= */
-body {
-    text-align: center;
-}
-
-main {
-    padding-top: 40px;
+header {
+    padding-bottom: 40px;
 }
 
 /* ======================= */
 
 /* MICRO LAYOUT
    ======================= */
-h1,
+   /* header */
 h1 span {
-    background-color: #d27474;
-    color: white;
-    text-align: center;
-}
-
-h1 span {
-    display: block;
-    filter: invert(1);
     transform: scale(-1);
 }
 
-label {
-    display: block;
-    padding-bottom: 20px;
+   /* main */
+input {
+    border-color: rgba(211, 211, 211,0.8);
+    padding: 3px;
+}
+#showIfPal {
+    padding: 10px;
+    background-color: aliceblue;
+    border: none;
 }
 
-#output {
-    padding-top: 20px;
-}
-
-#output .marked {
-    background-color: #d27474;
-    color: white;
+#output span {
     padding: 10px;
     font-size: 130%;
     font-weight: 600;
-}
-
-.false {
-    filter: invert(1);
-
 }
 
 /* ======================= */

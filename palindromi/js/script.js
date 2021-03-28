@@ -10,10 +10,10 @@ function showIfPal() {
     var word = document.getElementById("user-input").value;
     var wordIsPal = isPalindrome(word);
     // IF !wordIsPal (default)
-    var greetOrGrieve = ["marked false", "non", "peccato!"];
+    var greetOrGrieve = ["main-colors palindrome", "non", "peccato!"];
     // IF wordIsPal
     if (wordIsPal) {
-        greetOrGrieve = ["marked true", "", "complimenti!"];
+        greetOrGrieve = ["main-colors", "", "complimenti!"];
     }
     var message = `<span class="${greetOrGrieve[0]}">"${word}"</span> ${greetOrGrieve[1]} è un palindromo, ${greetOrGrieve[2]}`;
     document.getElementById("output").innerHTML = message;

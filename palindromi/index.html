@@ -14,13 +14,15 @@
 
 <body>
     <header>
-        <h1>È Palindromo?<span>È Palindromo?</span></h1>
+        <h1 class="main-colors text-center">È Palindromo?<span class=" main-colors palindrome block">È Palindromo?</span></h1>
     </header>
     <main>
-        <label for="user-input">Credi di aver scoperto un nuovo palidromo? Controlla qua:</label>
-        <input type="text" id="user-input" name="user-input" placeholder="inserisci testo">
-        <input type="submit" id="showIfPal" onclick="showIfPal()" value="Controlla">
-        <p id="output"> </p>
+        <div class="pb-20 text-center">
+            <label class="block pb-20" for="user-input">Credi di aver scoperto un nuovo palidromo? Controlla qua:</label>
+            <input type="text" id="user-input" name="user-input" placeholder="inserisci testo">
+            <input type="submit" id="showIfPal" onclick="showIfPal()" value="Controlla">
+        </div>
+        <p id="output" class="text-center"> </p>
     </main>
     <script src="js/script.js"></script>
 

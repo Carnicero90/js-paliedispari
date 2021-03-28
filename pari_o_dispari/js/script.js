@@ -2,14 +2,14 @@ const minNumber = 1;
 const maxNumber = 5;
 
 // PROMPTS
-var userChoice;
-while (userChoice === undefined) {
+var userChooseOdd;
+while (userChooseOdd === undefined) {
    switch (prompt("pari o dispari?")) {
        case "pari":
-           userChoice = false;
+           userChooseOdd = false;
            break;
         case "dispari":
-            userChoice = true;
+            userChooseOdd = true;
             break;
         default:
             alert("inserire risposta valida!");
@@ -25,7 +25,7 @@ var compiNumber = randomInt(minNumber, maxNumber);
 alert("Mister Computer ha scelto: " + compiNumber);
 
 var resIsOdd = isOdd(userNumber + compiNumber);
-var userWon = userChoice === resIsOdd;
+var userWon = userChooseOdd === resIsOdd;
 var resultMessage = userWon ? "hai vinto!" : "hai perso!";
 alert(resultMessage);
 location.reload();
@@ -35,7 +35,7 @@ location.reload();
 function isOdd(number) {
     /* return Boolean(1) (aka: true) if number % 2 === 1 (aka: number is odd),
     else: false */
-    return Boolean(number % 2);
+    return number % 2 === 1;
 }
 
 function randomInt(min, max) {
